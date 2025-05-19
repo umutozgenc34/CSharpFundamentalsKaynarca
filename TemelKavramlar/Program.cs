@@ -1,7 +1,7 @@
 ﻿// Proje isimlendirmesinde Türkçe karakterler kullanılmamalıdır.
 // C# Case sensitive (Büyük küçük harf duyarlı) bir dildir.
 // C# dilinde kod yazarken yazdığımız kodlar, derleyici tarafından okunur ve işlenir.
-// C# dilinde aldığımız hatalar Error
+// C# dilinde aldığımız hatalar Error List penceresinde görünür.
 // C# dilinde kod yazarken, yazdığımız kodları bitirmek için noktalı virgül (;) kullanırız.
 // C# dilinde kod yazarken, kodları gruplamak için süslü parantezler ({}) kullanırız.
 // C# dilinde kodlarımızı çalıştırmak için bir "Main" metodu kullanırız.
