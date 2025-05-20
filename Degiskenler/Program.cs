@@ -127,6 +127,14 @@
 // buna camelCase yazım kuralı denir.
 // örnek: int sayiBir = 10; // zorunlu değildir ama yaygın kullanım bu şekildedir.
 
+// *********
+// stringin default değeri null'dır.
+// string a = default; // output null
+// int'in default değeri 0'dır.
+// int a = default; // output 0
+
+// **********
+
 // *** var Keywordu ***
 // var anahtar kelimesi ile değişken tanımlanırken veri türü belirtilmez.
 // var anahtar kelimesi ile tanımlanan değişkenin veri türü, atanan değere göre belirlenir.
