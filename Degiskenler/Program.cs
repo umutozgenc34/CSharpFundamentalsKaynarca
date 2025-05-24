@@ -183,3 +183,18 @@
 //Console.WriteLine($"{takim} ligin {siralama}. sırasında ve bu sene şampiyon {sampiyonMu}");
 // output : Beşiktaş ligin 4. sırasında ve bu sene şampiyon False
 
+// ***** Console.ReadLine() ******
+
+// Console.ReadLine() metodu, kullanıcıdan girdi almak için kullanılır.
+// Kullanıcıdan alınan girdi, string veri türünde bir değişken olarak saklanır.
+// Console.ReadLine() metodu, kullanıcıdan girdi alana kadar programın çalışmasını durdurur.
+// Kullanıcıdan alınan girdi, Enter tuşuna basıldığında tamamlanır.
+
+// Örnek : Console.WriteLine("İsminizi giriniz");
+// string isim = Console.ReadLine(); // kullanıcıdan girdi alınıyor ve isim değişkenine atanıyor.
+// Console.WriteLine("Soyadınızı giriniz");
+// string soyad = Console.ReadLine(); // kullanıcıdan girdi alınıyor ve soyad değişkenine atanıyor.
+// Console.WriteLine($"Adım {isim} ve soyadım {soyad}"); 
+// output : Adım Umut(Console.ReadLine() dan alınan değer) ve soyadım Özgenç(Console.ReadLine() dan alınan değer)
+
+
