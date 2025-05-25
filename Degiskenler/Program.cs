@@ -197,4 +197,51 @@
 // Console.WriteLine($"Adım {isim} ve soyadım {soyad}"); 
 // output : Adım Umut(Console.ReadLine() dan alınan değer) ve soyadım Özgenç(Console.ReadLine() dan alınan değer)
 
+// ******* TÜR DÖNÜŞÜMLERİ *******
+// **CASTING**
+// C# dilinde veri türleri arasında dönüşüm işlemleri yapılabilir.
+// Veri türleri arasında dönüşüm işlemleri, casting (tip dönüştürme) olarak adlandırılır.
 
+//1. Implicit Casting (KAPALI) (BİLİNÇSİZ DÖNÜŞÜM)
+
+// Implicit casting, veri türünün daha geniş bir aralığa sahip
+// olduğu durumlarda otomatik olarak gerçekleşir.
+// Bu durumda veri kaybı olmaz ve
+// programın çalışması için herhangi bir ek işlem yapmaya gerek yoktur.
+
+//Örnek : 
+// int sayi = 10; // int veri türünde bir değişken tanımlanıyor ve 10 değeri atanıyor.
+// long uzunSayi = sayi; // int veri türünden long veri türüne otomatik olarak dönüşüm yapılıyor.
+
+// int sayi2 = 20; // int veri türünde bir değişken tanımlanıyor ve 20 değeri atanıyor.
+// float ondalikliSayi = sayi2; // int veri türünden float veri türüne otomatik olarak dönüşüm yapılıyor.
+
+//2. Explicit Casting (AÇIK) (BİLİNÇLİ DÖNÜŞÜM)
+
+// Explicit casting, veri türünün daha dar bir aralığa sahip olduğu durumlarda
+// yapılır ve bu durumda veri kaybı olabilir.
+// Bu durumda programın çalışması için ek işlem yapmaya gerek vardır.
+// Atanacak değerin önüne ( veri türü ) yazılarak açık olarak dönüşüm yapılır.
+
+// Örnek :  
+// long uzunSayi = 10000000000; // long veri türünde bir değişken tanımlanıyor ve 10000000000 değeri atanıyor.
+// int sayi = (int)uzunSayi; // long veri türünden int veri türüne açık olarak dönüşüm yapılıyor.
+
+// float ondalikliSayi = 10.5f; // float veri türünde bir değişken tanımlanıyor ve 10.5 değeri atanıyor.
+// int sayi2 = (int)ondalikliSayi; // float veri türünden int veri türüne açık olarak dönüşüm yapılıyor.
+// Console.WriteLine(sayi2); // output : 10 (ondalıklı kısım atılır)
+
+// ** BOXING VE UNBOXING **
+// Boxing, değer tipinden referans tipine dönüşüm işlemidir.
+// Unboxing, referans tipinden değer tipine dönüşüm işlemidir.
+
+// Boxing işlemi, değer tipinin heap bölgesine taşınması anlamına gelir.
+// Unboxing işlemi ise, heap bölgesindeki referans tipinin değer tipine geri dönüştürülmesi anlamına gelir.
+
+// BOXING ORNEK : 
+// int sayi = 10; // int veri türünde bir değişken tanımlanıyor ve 10 değeri atanıyor.
+// object obj = sayi; // int veri türünden object veri türüne boxing işlemi yapılıyor.
+
+// UNBOXING ORNEK :
+// object obj = 10; // object veri türünde bir değişken tanımlanıyor ve 10 değeri atanıyor.
+// int sayi = (int)obj; // object veri türünden int veri türüne unboxing işlemi yapılıyor.
