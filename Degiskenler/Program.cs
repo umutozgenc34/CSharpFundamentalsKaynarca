@@ -204,6 +204,7 @@
 
 //1. Implicit Casting (KAPALI) (BİLİNÇSİZ DÖNÜŞÜM)
 
+// C#'ın kendi özelliğidir.
 // Implicit casting, veri türünün daha geniş bir aralığa sahip
 // olduğu durumlarda otomatik olarak gerçekleşir.
 // Bu durumda veri kaybı olmaz ve
@@ -218,6 +219,7 @@
 
 //2. Explicit Casting (AÇIK) (BİLİNÇLİ DÖNÜŞÜM)
 
+// C#'ın kendi özelliğidir.
 // Explicit casting, veri türünün daha dar bir aralığa sahip olduğu durumlarda
 // yapılır ve bu durumda veri kaybı olabilir.
 // Bu durumda programın çalışması için ek işlem yapmaya gerek vardır.
@@ -232,6 +234,8 @@
 // Console.WriteLine(sayi2); // output : 10 (ondalıklı kısım atılır)
 
 // ** BOXING VE UNBOXING **
+
+// C#'ın kendi özelliğidir.
 // Boxing, değer tipinden referans tipine dönüşüm işlemidir.
 // Unboxing, referans tipinden değer tipine dönüşüm işlemidir.
 
@@ -245,3 +249,30 @@
 // UNBOXING ORNEK :
 // object obj = 10; // object veri türünde bir değişken tanımlanıyor ve 10 değeri atanıyor.
 // int sayi = (int)obj; // object veri türünden int veri türüne unboxing işlemi yapılıyor.
+
+
+// ** CONVERT **
+
+// .NET'in sunduğu bir sınıftır.
+// Convert sınıfı, veri türleri arasında dönüşüm işlemlerini kolaylaştırır.
+
+// Örnek : Console.WriteLine("Yaşınızı giriniz");
+// int yas = Convert.ToInt32(Console.ReadLine()); // kullanıcıdan alınan girdi int veri türüne dönüştürülüyor.
+// Console.WriteLine($"Yaşınız : {yas}"); // output : Yaşınız : 25 (kullanıcının girdiği değer)
+
+// Örnek : Console.WriteLine("Boyunuzu giriniz")
+// float boy = Convert.ToSingle(Console.ReadLine()); // kullanıcıdan alınan girdi float veri türüne dönüştürülüyor.
+// Console.WriteLine($"Boyunuz : {boy}"); // output : Boyunuz : 1.75 (kullanıcının girdiği değer)
+
+// Örnek : Console.WriteLine("Kilonuzu giriniz")
+// decimal kilo = Convert.ToDecimal(Console.ReadLine()); // kullanıcıdan alınan girdi decimal veri türüne dönüştürülüyor.
+// Console.WriteLine($"Kilonuz : {kilo}"); // output : Kilonuz : 70 (kullanıcının girdiği değer)
+
+// Örnek : Console.WriteLine("Ehliyetiniz var mı?")
+// bool ehliyet = Convert.ToBoolean(Console.ReadLine()); // kullanıcıdan alınan girdi bool veri türüne dönüştürülüyor.
+// Console.WriteLine($"Ehliyetiniz var mı? : {ehliyet}"); // output : Ehliyetiniz var mı? : True/False (kullanıcının girdiği değer)
+
+// Örnek : Console.WriteLine("Ondalıklı sayı değerini giriniz")
+// double ondalikliSayi = Convert.ToDouble(Console.ReadLine()); // kullanıcıdan alınan girdi double veri türüne dönüştürülüyor.
+// Console.WriteLine($"Ondalıklı sayınız : {ondalikliSayi}"); // output : Ondalıklı sayınız : 10.5 (kullanıcının girdiği değer)
+
