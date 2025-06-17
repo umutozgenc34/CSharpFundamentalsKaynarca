@@ -163,3 +163,69 @@
 //if koşulunun nasıl çalıştığını izleyelim.
 
 //Console.WriteLine satırlarında kodun akışını inceleyelim.
+
+// UYGULAMALAR : 
+
+// Kullanıcıdan bir sayı alarak bu sayının pozitif,
+// negatif veya sıfır olduğunu kontrol eden bir program yazınız.
+
+//Console.WriteLine("Lütfen bir sayı giriniz");
+//int sayi = Convert.ToInt32(Console.ReadLine());
+
+//if (sayi > 0)
+//{
+//    Console.WriteLine("Girdiğiniz sayı pozitif.");
+//}
+//else if (sayi < 0)
+//{
+//    Console.WriteLine("Girdiğiniz sayı negatif.");
+//}
+//else
+//{
+//    Console.WriteLine("Girdiğiniz sayı sıfır.");
+//}
+
+// ** BASİT HESAP MAKİNESİ ÖRNEĞİ ** 
+// Kullanıcıdan iki sayı ve bir işlem (toplama, çıkarma, çarpma, bölme) alarak
+// bu işlemi gerçekleştiren bir program yazınız.
+
+//Console.WriteLine("Lütfen birinci sayıyı giriniz:");
+//int sayi1 = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Lütfen ikinci sayıyı giriniz:");
+//int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+//Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz: +, -, *, /");
+//string islem = Console.ReadLine();
+
+//if (islem == "+")
+//{
+//    int toplam = sayi1 + sayi2;
+//    Console.WriteLine($"SONUÇ : {toplam}");
+//}
+//else if (islem == "-")
+//{
+//    int fark = sayi1 - sayi2;
+//    Console.WriteLine($"SONUÇ : {fark}");
+//}
+//else if (islem == "*")
+//{
+//    int carpma = sayi1 * sayi2;
+//    Console.WriteLine($"SONUÇ : {carpma}");
+//}
+//else if (islem == "/")
+//{
+//    if (sayi2 != 0)
+//    {
+//        double bolum = (double)sayi1 / sayi2;
+//        Console.WriteLine($"SONUÇ : {bolum}");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Bir sayı 0'a bölünemez.");
+//    }
+    
+//}
+//else
+//{
+//    Console.WriteLine("Geçersiz bir işlem girdiniz.");
+//}
