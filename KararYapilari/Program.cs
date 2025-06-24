@@ -223,9 +223,119 @@
 //    {
 //        Console.WriteLine("Bir sayı 0'a bölünemez.");
 //    }
-    
+
 //}
 //else
 //{
 //    Console.WriteLine("Geçersiz bir işlem girdiniz.");
+//}
+
+// *** TERNARY OPERATOR (?) ***
+
+// Ternary operator, if-else yapısının kısa bir versiyonudur.
+// Bu operatör, bir koşulu kontrol eder ve koşul doğruysa bir değer, yanlışsa başka bir değer döndürür.
+// Söz dizimi şu şekildedir:
+// koşul ? doğruysa_değer : yanlışsa_değer;
+
+// ÖRNEK:
+//Console.WriteLine("Bir sayı giriniz");
+//int sayi = Convert.ToInt32(Console.ReadLine());
+//string sonuc = (sayi % 2 == 0) ? "Sayı çifttir." : "Sayı tektir.";
+//Console.WriteLine(sonuc);
+// Yukarıdaki örnekte, kullanıcıdan bir sayı alınıyor ve bu sayının çift mi yoksa tek mi olduğu kontrol ediliyor.
+// Eğer sayı çiftse "Sayı çifttir." mesajı, tekse "Sayı tektir." mesajı gösteriliyor.
+
+// ÖRNEK:
+//Console.WriteLine("Yaşınızı giriniz");
+//int yas = Convert.ToInt32(Console.ReadLine());
+//string ehliyetDurumu = (yas >= 18) ? "Ehliyet alabilirsiniz." : "Ehliyet alamazsınız.";
+//Console.WriteLine(ehliyetDurumu);
+// Yukarıdaki örnekte, kullanıcıdan yaş bilgisi alınıyor ve eğer yaş 18 veya daha büyükse "Ehliyet alabilirsiniz."
+// mesajı, aksi halde "Ehliyet alamazsınız." mesajı gösteriliyor.
+
+
+// *** SWITCH CASE ***
+// Switch-case yapısı, bir değişkenin değerine göre farklı kod bloklarını çalıştırmak için kullanılır.
+// Bu yapı, if-else yapısına benzer ancak daha okunabilir ve düzenli bir şekilde birden fazla durumu kontrol etmek için kullanılır.
+// Söz dizimi şu şekildedir:
+// switch (değişken)
+//{
+//     case değer1:
+//         // değer1 için çalışacak kod bloğu
+//         break;
+//     case değer2:
+//         // değer2 için çalışacak kod bloğu
+//         break;
+//     // ...
+//     default:
+//         // Hiçbir case ile eşleşmezse çalışacak kod bloğu
+//         break;
+// }
+
+// ÖRNEK:
+//Console.WriteLine("Lütfen bir gün numarası giriniz (1-7):");
+//int gunNumarasi = Convert.ToInt32(Console.ReadLine());
+//switch (gunNumarasi)
+//{
+//    case 1:
+//        Console.WriteLine("Pazartesi");
+//        break;
+//    case 2:
+//        Console.WriteLine("Salı");
+//        break;
+//    case 3:
+//        Console.WriteLine("Çarşamba");
+//        break;
+//    case 4:
+//        Console.WriteLine("Perşembe");
+//        break;
+//    case 5:
+//        Console.WriteLine("Cuma");
+//        break;
+//    case 6:
+//        Console.WriteLine("Cumartesi");
+//        break;
+//    case 7:
+//        Console.WriteLine("Pazar");
+//        break;
+//    default:
+//        Console.WriteLine("Geçersiz bir gün numarası girdiniz.");
+//        break;
+//}
+
+// Yukarıdaki örnekte, kullanıcıdan bir gün numarası alınıyor ve bu numaraya göre gün ismi yazdırılıyor.
+// Eğer kullanıcı 1-7 arası bir sayı girmezse "Geçersiz bir gün numarası girdiniz." mesajı gösteriliyor.
+// Switch-case yapısı, özellikle çok sayıda koşul kontrolü yapmanız gerektiğinde daha okunabilir ve düzenli bir kod yazmanızı sağlar.
+
+// ÖRNEK:
+//Console.WriteLine("Lütfen bir işlem seçiniz: +, -, *, /");
+//string islem = Console.ReadLine();
+//Console.WriteLine("Lütfen birinci sayıyı giriniz:");
+//int sayi1 = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Lütfen ikinci sayıyı giriniz:");
+//int sayi2 = Convert.ToInt32(Console.ReadLine());
+//switch (islem)
+//{
+//    case "+":
+//        Console.WriteLine($"SONUÇ : {sayi1 + sayi2}");
+//        break;
+//    case "-":
+//        Console.WriteLine($"SONUÇ : {sayi1 - sayi2}");
+//        break;
+//    case "*":
+//        Console.WriteLine($"SONUÇ : {sayi1 * sayi2}");
+//        break;
+//    case "/":
+//        if (sayi2 != 0)
+//        {
+//            Console.WriteLine($"SONUÇ : {(double)sayi1 / sayi2}");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Bir sayı 0'a bölünemez.");
+//        }
+//        break;
+//    default:
+//        Console.WriteLine("Geçersiz bir işlem girdiniz.");
+//        break;
 //}
