@@ -209,3 +209,61 @@
 //}
 
 //Console.WriteLine("Doğru şifre");
+
+// *** 4. do-while Döngüsü ***
+
+// do-while döngüsü, koşul sağlansa da sağlanmasa da döngü bloğunun en az bir kez çalışmasını sağlar.
+// Çünkü önce döngü bloğu çalışır, ardından koşul kontrol edilir.
+
+// Söz dizimi şu şekildedir:
+
+// do
+// {
+//     // Döngü bloğu
+// }
+// while (koşul);
+
+// ÖRNEK:
+// 1'den 10'a kadar olan sayıları yazdıran bir do-while döngüsü
+
+//int i = 1;
+//do
+//{
+//    Console.WriteLine(i);
+//    i++;
+//}
+//while (i <= 10);
+
+// ÖRNEK:
+// Kullanıcı doğru şifreyi girene kadar şifre isteyen bir do-while döngüsü
+
+//string dogruSifre = "1234";
+//string kullanicidanSifre;
+
+//do
+//{
+//    Console.WriteLine("Lütfen şifre giriniz:");
+//    kullanicidanSifre = Console.ReadLine();
+
+//    if (kullanicidanSifre != dogruSifre)
+//    {
+//        Console.WriteLine("Hatalı şifre, tekrar deneyiniz.");
+//    }
+
+//} while (kullanicidanSifre != dogruSifre);
+
+//Console.WriteLine("Doğru şifre");
+
+// ÖRNEK:
+// Kullanıcıdan sayı almaya devam eden ve negatif sayı girildiğinde döngüden çıkan program
+
+//int sayi;
+//do
+//{
+//    Console.WriteLine("Bir sayı giriniz (negatif sayı girerseniz çıkılır):");
+//    sayi = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine($"Girdiğiniz sayı: {sayi}");
+
+//} while (sayi >= 0);
+
+//Console.WriteLine("Negatif sayı girildi, program sonlandı.");
